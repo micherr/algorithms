@@ -2,13 +2,6 @@ package com.micherr;
 
 public class SpiralTraverse {
     public static void main(String[] args) {
-        /*int[][] arr = new int[][]{
-                new int[]{1, 2, 3, 4, 5},
-                new int[]{6, 7, 8, 9, 10},
-                new int[]{11, 12, 13, 14, 15},
-                new int[]{16, 17, 18, 19, 20},
-                new int[]{21, 22, 23, 24, 25}
-        };*/
         int[][] arr = new int[][]{
                 new int[]{1, 2, 3},
                 new int[]{4, 5, 6},

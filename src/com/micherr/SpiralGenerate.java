@@ -1,9 +1,7 @@
 package com.micherr;
 
-import java.util.ArrayList;
-
 public class SpiralGenerate {
-    public static ArrayList<ArrayList<Integer>> generateMatrix(int A) {
+    public static int[][] generateMatrix(int A) {
         int[][] arr = new int[A][A];
 
         int minCol = 0;
@@ -36,20 +34,11 @@ public class SpiralGenerate {
 
         arr[minRow][minCol] = current;
 
-        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
-        for (int[] ints : arr) {
-            ArrayList<Integer> row = new ArrayList<>();
-            for (int anInt : ints) {
-                row.add(anInt);
-            }
-            result.add(row);
-        }
-
-        return result;
+        return arr;
     }
 
     public static void main(String[] args) {
-        ArrayList<ArrayList<Integer>> arr = generateMatrix(1);
-        System.out.println(arr);
+        int[][] arr = generateMatrix(1);
+        Utils.print(arr);
     }
 }
